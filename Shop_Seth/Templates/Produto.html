@@ -1,0 +1,55 @@
+{% extends 'base_header.html' %} 
+{% block content %}
+{% load static %}
+<style>
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.corp{
+    color: white;
+    background-image: url("{% static 'cap_seth.jpeg' %}");
+    height: 50rem;
+    background-repeat: no-repeat;
+    background-position: 15rem;
+    background-position-y: 5rem;
+    border-radius: 1rem;
+}
+.prod{
+    margin-left: 30rem;
+}
+p{
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+<h2>Produto</h2>
+<div class="corp">
+    <div class="prod">
+        <ul>
+            <p>Dados do produto</p>
+            <li><strong>Nome: </strong> {{produto.Nome}}</li>
+            <li><strong>Preço: </strong> {{produto.Preco}}</li>
+            <li><strong>Quantidade: </strong> {{produto.Quantidade}}</li>
+            <li><strong>Valor: </strong></li>
+        </ul>
+        <form action="{% url 'alterar' produto.id %}" method="POST">
+            {% csrf_token %}
+            <input name="novo_valor" type="decimal" for="preco" placeholder="{{produto.Preco}}">
+            <button type="submit" class="btn btn-success">Alterar</button>
+        </form>
+    </div>
+</div>
+
+
+
+    
+{% endblock %}
+<form action="{% url 'alterar' produto.id %}" method="POST">
+    {% csrf_token %}
+    <input name="novo_valor" type="decimal" for="preco" placeholder="{{produto.Preco}}">
+    <button style="color: white;" type="submit">alterar</button>
+</form>

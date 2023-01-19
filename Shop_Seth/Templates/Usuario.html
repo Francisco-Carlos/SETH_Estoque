@@ -1,0 +1,74 @@
+{% extends 'base_header.html' %} 
+{% block content %}
+{% load static %} 
+    <style>
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 1.8rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input,button{
+            margin-left: 25rem;
+        }
+        input{
+            width: 3rem;
+            height: 2.5rem;
+            border-radius: 0.8rem;
+            opacity: 0.3;
+        }
+        input:focus{
+            width: 15rem;
+            opacity: 1;
+        }
+        table{
+            margin-top: 1rem;
+            opacity: 0.6;
+            
+        }
+        table:hover{
+            opacity: 1;
+        }
+        #div_p{
+            background-image: url("{% static 'cap_seth.jpeg' %}");
+            height: 50rem;
+            background-repeat: no-repeat;
+            background-position: 8rem;
+            background-position-y: 15rem;
+            border-radius: 1rem;
+            
+        }
+    </style>
+   
+    <div class="container mt-3">
+        <div id="div_p">
+                <h2>Produtos no estoque</h2>
+                <form action="{% url 'pesq' %}" method="post">
+                    {% csrf_token %}
+                    <input type="text" name="pesquisa" placeholder="Digite um produto">
+                    <a href="{% url 'excel' %}" class="btn btn-success"> Excel </a>
+                    <a href="{% url 'Sair'%}" class="btn btn-primary">Sair</a>
+                </form>
+                
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Nome do produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for pro in produtos %}
+                        <tr>
+                            <td>{{pro.Nome}}</td>
+                            <td>R$: {{pro.Preco}}</td>
+                            <td>{{pro.Quantidade}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+        </div>
+   </div>
+
+{% endblock %}
