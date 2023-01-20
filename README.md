@@ -20,28 +20,28 @@
 </h4>
 
 <h2 align="center" id="Sobre">Sobre</h2>
-<p> O projeto e simples o foco em mostrar um controle de estoque facil e intuitivel com usuarios padrao que entra com a seu
-usuario e senha e tem alguns privilegios e tem os administradores que tem mais liberdade de alterar os produtos.</p>
+<p> O projeto e simples o foco em mostrar um controle de estoque fácil e intuitivo com usuários padrão que entra com a seu
+usuário e senha e tem alguns privilégios e tem os administradores que tem mais liberdade de alterar os produtos. </p>
 
 
 
 <h2 align="center" id="Funcionamento"> Funcionamento </h2>
-<p> O site e bem direto tem sua tela de login ja pedindo a chapa e a senha do usuario, dependo do usuario fornecido vai ter mais liberdade 
+<p> O site e bem direto tem sua tela de login já pedindo a chapa e a senha do usuário, dependo do usuário fornecido vai ter mais liberdade 
 no site</p>
 <p align="center">
     <img src="https://user-images.githubusercontent.com/30003984/213576177-09fb3ac9-7c31-46f5-bb25-3d7f50a703f8.png">
 </p>
 
 <h2 align="center" id="Imagens"> Usuario padrão</h2>
-<p> O usuario padrão poderar fazer pesquisas e baixar o arquivo em exel , dessa forma poderar passar essa infomação por email
-ou fazer uma altearção no exel pedindo por produtos ou solicitando a troca do valor da mercadoria sem fazer alterações no site.</p>
+<p> O usuário padrão poderá fazer pesquisas e baixar o arquivo em excel, dessa forma poderá passar essa informação por e-mail
+ou fazer uma alteração no excel pedindo por produtos ou solicitando a troca do valor da mercadoria sem fazer alterações no site.</p>
 
 ![Seth_usuario](https://user-images.githubusercontent.com/30003984/213576523-0271c515-ec02-4622-8f50-ea8d4f63c5e4.png)
 
 
 <h2 align="center" id="Imagens"> Adminstrador</h2>
 <p> Administrador usando essa conta pode além da pesquisar os produtos também
-pode baixar o arquivo em exel deletar os produtos e tambem alterar o valor de cada um.</p>
+pode baixar o arquivo em excel deletar os produtos e também alterar o valor de cada um.</p>
 
 ![Seth_admin](https://user-images.githubusercontent.com/30003984/213587310-3f9ba28d-717c-40d5-b53c-67d5136d9c3c.png)
 ![Seth_admin_excel](https://user-images.githubusercontent.com/30003984/213587440-86ffd5f6-558c-4c99-b67c-ebfc85f80f81.png)
